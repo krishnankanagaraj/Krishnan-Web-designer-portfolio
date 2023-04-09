@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x:hidden ;
+    background-color:#dcdadae2 ;
+    color:#F5f5f5;
+  }
+  h1{
+    text-align: right;
+    margin-right:40px;
+    padding: 10px 0 0 0;
+    height: fit-content;
+    color:#ffffff;
+    text-shadow:1px 2px 5px #000000;
+    letter-spacing:5px;
+  }
+  .container{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background: url(./images/KK\ Logo.png);
+    background-position: 200px center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  form{
+    width:25rem;
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    padding:0 25px;
+    background:transparent;
+    box-shadow: 0 8px 32px 0 rgba(56, 56, 56, 0.37);
+    border-radius:30px;
+    border-left:1px solid rgba(255,255,255,.3);
+    border-top:1px solid rgba(255,255,255,.3);
+    margin-right: 100px;
+  }
+  form:after{
+    content: "";
+    width: 250px;
+    height: 250px;
+    background: #8D47FF;
+    position: absolute;
+    right:-2%;
+    bottom: 1%;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  form::before{
+    content: "";
+    width: 300px;
+    height: 300px;
+    background: #8D47FF;
+    position: absolute;
+    right:25%;
+    top: 2%;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  
+  label{
+    padding: 15px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow:1px 2px 5px #000000;
+  }
+  input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #74FFC5;
+    width: 90%;
+    margin:0 auto;
+    background: transparent;
+  }
+  input:focus{
+    height: 2rem;
+    border: 2px solid #74FFC5
+  }
+  select{
+    padding:10px 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    border:3px solid #74FFC5;
+    cursor: pointer;
+    background: transparent;
+  }
+  option{
+    color: #8D47FF;
+    font-size: 2rem;
+  }
+  select:hover{
+    background: #74FFC5;
+
+  }
+  button{
+    padding: 10px;
+    width: max-content;
+    margin: 10px auto;
+    color: #fff;
+    background: transparent;
+    border: 3px solid #74FFC5;
+    border-radius: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 1px 2px 25px #848484;
+    /* text-shadow:1px 2px 5px #000000; */
+  }
+  button:hover{
+    color:#fff;
+    background:#74FFC5;
+    cursor: pointer;
+  }
+  
