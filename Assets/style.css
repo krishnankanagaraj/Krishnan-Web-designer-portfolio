@@ -13,6 +13,11 @@ body {
     background: transparent;
     color:#ffffff;
   }
+  .btt{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+  }
   .heading{
       color:#8D47FF ;
       text-align: center;
