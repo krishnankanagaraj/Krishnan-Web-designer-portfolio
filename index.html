@@ -13,7 +13,7 @@
 <body class="bg-dark">
   <header class="fixed-top">
     <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd"; data-bs-theme="dark">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
         <a class="navbar-brand text-dark fw-bold fs-3 text-uppercase" href="#"><span class="text-danger">
           Krishnan
         </span>Kanagaraj</a>
@@ -26,6 +26,9 @@
               <a class="nav-link nav-hover fs-5 text-dark activate" aria-current="page" href="#hero">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link text-dark fs-5 nav-hover" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link nav-hover fs-5 text-dark" aria-current="page" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
@@ -34,9 +37,7 @@
             <li class="nav-item">
               <a class="nav-link text-dark fs-5 nav-hover" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark fs-5 nav-hover" href="#about">About Me</a>
-            </li>
+            
             <li>
              <a href="./hireme.html" class="nav-link">
               <button class="btn fs-5 btn-outline-success" type="button">Contact Me</button>
@@ -52,14 +53,24 @@
       <div class="container-fluid">
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-md-6 text-center ">
-            <img class="img-fluid border border-5 rounded-3 border-danger my-5" src="./Assets/images/full-size-image-removebg-preview (2).png" width="350" alt="profile img">
+            <img class="img-fluid rounded-3 border-danger my-5" src="./Assets/images/full-size-image-removebg-preview (2).png" width="350" alt="profile img">
           </div>
           <div class="col-md-6 text-center">
             <p class="text-white lead display-5">Hi I am a <span class="text-danger display-3">Web Developer</span></p>
-            <a class="text-decoration-none text-white" href="./Assets/Resume_krishnan.pdf" download><button class="btn btn-outline-danger btn-lg me-4">Download Resume</button></a>
-            <a href="#contact" class="text-decoration-none text-white"><button class="btn btn-danger btn-lg">Contact Me</button></a>
+            <div class="d-flex gap-3 flex-column justify-content-center align-items-center">
+              <a class="text-decoration-none text-white" href="./Assets/Resume_krishnan.pdf" download><button class="btn btn-outline-danger btn-lg me-4">Download Resume</button></a>
+              <a href="#contact" class="text-decoration-none text-white"><button class="btn btn-danger btn-lg">Contact Me</button></a>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="lead display-3 text-white text-center">About Me</p>
+      <div class="container-fluid d-flex justify-content-center">
+        <p class="lead text-white w-75" style="text-align: justify;">
+          My name is Krishnan. I am a learning Front-end web development for past one year. I have been working in technologies like HTML5 , CSS3 , Bootstrap , JavaScript , React.js and I have some basic knowledge of Node js , Express.js , MongoDB and I have been working on software like Adobe photoshop, Figma for UI design. I did some static sites with the help of friends for small clients in my locality. I have started to learn website design and development out of my interest. Now I want to change my career to web design and development because I feel it as more engaging and rewarding career.
+        </p>
       </div>
     </section>
     <section id="experience">
@@ -99,64 +110,71 @@
 
     </section>
     <section id="qualification" class="pt-5 mb-5">
-      <p class="lead display-3 text-white text-center">Eductional Qualification</p>
-      <div class="container-fluid d-flex justify-content-center">
-        <table class="table table-light table-hover table-hover w-75">
-          <tr>
-            <th scope="col">Course</th>
-            <th scope="col">Institution</th>
-            <th scope="col">Percentage</th>
-            <th scope="col">Year Of Passing</th>
-          </tr>
-          <tbody class="table-group-divider"></tbody>
-          <tr>
-            <th scope="row">B.E ECE</th>
-            <td>S.K.R Engineering College,Chennai</td>
-            <td>62</td>
-            <td>2016</td>
-          </tr>
-          <tr>
-            <th scope="row">HSC</th>
-            <td>Sri VDS jain Higher Sec School,Tiruvannamalai</td>
-            <td>76</td>
-            <td>2012</td>
-          </tr>
-          <tr>
-            <th scope="row">SSLC</th>
-            <td>Sri VDS jain Higher Sec School,Tiruvannamalai</td>
-            <td>65</td>
-            <td>2010</td>
-          </tr>
-        </table>
+      <div class="container-fluid">
+        <p class="lead display-3 text-white text-center">Eductional Qualification</p>
+        <div class="row p-3">
+          <table class="table table-light table-hover table-hover">
+            <tr>
+              <th scope="col">Course</th>
+              <th scope="col">Institution</th>
+              <th scope="col">%</th>
+              <th scope="col">Year of passing</th>
+            </tr>
+            <tbody class="table-group-divider"></tbody>
+            <tr>
+              <th scope="row">B.E ECE</th>
+              <td class="text-warp" style="width: 150px;">S.K.R Engineering College, Chennai</td>
+              <td>62</td>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <th scope="row">HSC</th>
+              <td class="text-warp" style="width: 75px;">Sri VDS jain Higher Sec School, Tiruvannamalai</td>
+              <td>76</td>
+              <td>2012</td>
+            </tr>
+            <tr>
+              <th scope="row">SSLC</th>
+              <td>Sri VDS jain Higher Sec School, Tiruvannamalai</td>
+              <td>65</td>
+              <td>2010</td>
+            </tr>
+          </table>
+        </div>
       </div>
+      
     </section>
     <section id="skills">
       <p class="lead display-3 text-white text-center">Skills</p>
       <div class="container-fluid px-5 w-75">
         <div class="row d-flex justify-content-evenly gap-3">
-          <div class="card" style="width: 18rem;">
+          <div class="card d-flex justify-content-between align-items-center flex-column" style="width: 18rem; min-height: 230px;">
               <p class="fs-5 fw-bold text-center">React.js</p>
               <img src="./Assets/images/react.svg" class="card-img" alt="">
           </div>
-          <div class="card" style="width: 18rem;">
-            <p class="fs-5 fw-bold text-center">Figma</p>
-            <img src="./Assets/images/figma.png" class="card-img mx-auto" style="width: 120px;" alt="">
+          <div class="card d-flex justify-content-center align-items-center flex-column" style="width: 18rem; min-height: 230px;">
+            <p class="fs-5 fw-bold text-center">Bootstrap</p>
+            <img src="./Assets/images/icons8-bootstrap-120.png" class="card-img mx-auto" style="width: 250px;" alt="Bootstrap logo">
           </div>
-          <div class="card" style="width: 18rem;">
-            <p class="fs-5 fw-bold text-center">Adobe Photoshop</p>
-            <img src="./Assets/images/Adobe_Photoshop_CC_icon.svg.png" class="card-img mx-auto" style="width: 120px;" alt="Photoshop logo">
-          </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card d-flex justify-content-center align-items-center flex-column" style="width: 18rem; min-height: 230px;">
               <p class="fs-5 fw-bold text-center">Javascript</p>
               <img src="./Assets/images/icons8-javascript-120.png" class="card-img" alt="Javascript logo">
           </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card d-flex justify-content-center align-items-center flex-column" style="width: 18rem; min-height: 230px;">
             <p class="fs-5 fw-bold text-center">CSS3</p>
             <img src="./Assets/images/icons8-css3-color-120.png" class="card-img" alt="Css logo">
           </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card d-flex justify-content-center align-items-center flex-column" style="width: 18rem; min-height: 230px;">
               <p class="fs-5 fw-bold text-center">HTML 5</p>
               <img src="./Assets/images/icons8-html-5-color-120.png" class="card-img" alt="Html logo">
+          </div>
+          <div class="card d-flex justify-content-around align-items-center flex-column" style="width: 18rem; min-height: 230px;">
+            <p class="fs-5 fw-bold text-center">Figma</p>
+            <img src="./Assets/images/figma.png" class="card-img mx-auto mb-5" style="width: 120px;" alt="">
+          </div>
+          <div class="card d-flex justify-content-center align-items-center flex-column" style="width: 18rem; min-height: 230px;">
+            <p class="fs-5 fw-bold text-center">Adobe Photoshop</p>
+            <img src="./Assets/images/Adobe_Photoshop_CC_icon.svg.png" class="card-img mx-auto" style="width: 240px; padding-bottom: 15px;" alt="Photoshop logo">
           </div>
         </div>
       </div>
@@ -240,14 +258,7 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <p class="lead display-3 text-white text-center">About Me</p>
-      <div class="container-fluid d-flex justify-content-center">
-        <p class="lead text-white w-75" style="text-align: justify;">
-          My name is Krishnan. I am a learning Front-end web development for past one year. I have been working in technologies like HTML5 , CSS3 , Bootstrap , JavaScript , React.js and I have some basic knowledge of Node js , Express.js , MongoDB and I have been working on software like Adobe photoshop, Figma for UI design. I did some static sites with the help of friends for small clients in my locality. I have started to learn website design and development out of my interest. Now I want to change my career to web design and development because I feel it as more engaging and rewarding career.
-        </p>
-      </div>
-    </section>
+    
     <section id="contact">
       <p class="lead display-3 text-white text-center">Contact Me</p>
       <div class="container-fluid d-flex justify-content-center">
