@@ -53,10 +53,10 @@
       <div class="container-fluid">
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-md-6 text-center ">
-            <img class="img-fluid rounded-3 border-danger my-5" src="./Assets/images/full-size-image-removebg-preview (2).png" width="350" alt="profile img">
+            <img class="img-fluid rounded-3 border-danger my-md-5" src="./Assets/images/full-size-image-removebg-preview (2).png" width="350" alt="profile img">
           </div>
-          <div class="col-md-6 text-center">
-            <p class="text-white lead display-5">Hi I am a <span class="text-danger display-3">Web Developer</span></p>
+          <div class="col-md-6 text-center mx-auto w-100 py-5">
+            <p class="text-white lead display-5 text-center">Hi I am a <span class="text-danger display-3 d-block">Web Developer</span></p>
             <div class="d-flex gap-3 flex-column justify-content-center align-items-center">
               <a class="text-decoration-none text-white" href="./Assets/Resume_krishnan.pdf" download><button class="btn btn-outline-danger btn-lg me-4">Download Resume</button></a>
               <a href="#contact" class="text-decoration-none text-white"><button class="btn btn-danger btn-lg">Contact Me</button></a>
@@ -112,8 +112,8 @@
     <section id="qualification" class="pt-5 mb-5">
       <div class="container-fluid">
         <p class="lead display-3 text-white text-center">Eductional Qualification</p>
-        <div class="row p-3">
-          <table class="table table-light table-hover table-hover">
+        <div class="row p-3 d-flex justify-content-center">
+          <table class="table table-light table-hover table-hover" style="width: 75%;">
             <tr>
               <th scope="col">Course</th>
               <th scope="col">Institution</th>
@@ -146,33 +146,33 @@
     </section>
     <section id="skills">
       <p class="lead display-3 text-white text-center">Skills</p>
-      <div class="container-fluid px-5 w-75">
-        <div class="row d-flex justify-content-evenly gap-3">
-          <div class="card d-flex justify-content-between align-items-center flex-column" style="width: 18rem; min-height: 230px;">
+      <div class="container-fluid px-5" style="width: 80%;">
+        <div class="row d-flex justify-content-center gap-3">
+          <div class="card d-flex justify-content-between align-items-center flex-column" style="min-width: 16rem; max-width:18rem; min-height: 230px;">
               <p class="fs-5 fw-bold text-center">React.js</p>
               <img src="./Assets/images/react.svg" class="card-img" alt="">
           </div>
-          <div class="card d-flex justify-content-center align-items-center flex-column" style="width: 18rem; min-height: 230px;">
+          <div class="card d-flex justify-content-center align-items-center flex-column" style="min-width: 16rem; max-width:18rem; min-height: 230px;">
             <p class="fs-5 fw-bold text-center">Bootstrap</p>
-            <img src="./Assets/images/icons8-bootstrap-120.png" class="card-img mx-auto" style="width: 250px;" alt="Bootstrap logo">
+            <img src="./Assets/images/icons8-bootstrap-120.png" class="card-img mx-auto" style="min-width: 250px; max-width:18rem; min-height: 230px;" alt="Bootstrap logo">
           </div>
-          <div class="card d-flex justify-content-center align-items-center flex-column" style="width: 18rem; min-height: 230px;">
+          <div class="card d-flex justify-content-center align-items-center flex-column" style="min-width: 16rem; max-width:18rem; min-height: 230px;">
               <p class="fs-5 fw-bold text-center">Javascript</p>
               <img src="./Assets/images/icons8-javascript-120.png" class="card-img" alt="Javascript logo">
           </div>
-          <div class="card d-flex justify-content-center align-items-center flex-column" style="width: 18rem; min-height: 230px;">
+          <div class="card d-flex justify-content-center align-items-center flex-column" style="min-width: 16rem; max-width:18rem; min-height: 230px;">
             <p class="fs-5 fw-bold text-center">CSS3</p>
             <img src="./Assets/images/icons8-css3-color-120.png" class="card-img" alt="Css logo">
           </div>
-          <div class="card d-flex justify-content-center align-items-center flex-column" style="width: 18rem; min-height: 230px;">
+          <div class="card d-flex justify-content-center align-items-center flex-column" style="min-width: 16rem; max-width:18rem; min-height: 230px;">
               <p class="fs-5 fw-bold text-center">HTML 5</p>
               <img src="./Assets/images/icons8-html-5-color-120.png" class="card-img" alt="Html logo">
           </div>
-          <div class="card d-flex justify-content-around align-items-center flex-column" style="width: 18rem; min-height: 230px;">
+          <div class="card d-flex justify-content-around align-items-center flex-column" style="min-width: 16rem; max-width:18rem; min-height: 230px;">
             <p class="fs-5 fw-bold text-center">Figma</p>
             <img src="./Assets/images/figma.png" class="card-img mx-auto mb-5" style="width: 120px;" alt="">
           </div>
-          <div class="card d-flex justify-content-center align-items-center flex-column" style="width: 18rem; min-height: 230px;">
+          <div class="card d-flex justify-content-center align-items-center flex-column" style="min-width: 16rem; max-width:18rem; min-height: 230px;">
             <p class="fs-5 fw-bold text-center">Adobe Photoshop</p>
             <img src="./Assets/images/Adobe_Photoshop_CC_icon.svg.png" class="card-img mx-auto" style="width: 240px; padding-bottom: 15px;" alt="Photoshop logo">
           </div>
@@ -262,30 +262,40 @@
     <section id="contact">
       <p class="lead display-3 text-white text-center">Contact Me</p>
       <div class="container-fluid d-flex justify-content-center">
-        <div class="col-md-6">
-          <form class="bg-light p-5 rounded-3 mb-5" id="myForm">
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-              <p id="emailErr" class="hide" style="color: red;"></p>
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phone">
-              <p id="phErr" class="hide" style="color: red;"></p>
-              <div class="form-text">Phone Number Must be 10 Numbers.</div>
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="check">
-              <label class="form-check-label" for="Check">Click to accept <a href=""> terms and conditions</a></label>
-              <p id="checkErr" class="hide" style="color: red;"></p>
-            </div>
-            <div class="col-12 text-center">
-              <button type="submit" class="btn btn-primary w-50">Submit</button>
-            </div>
-          </form>
+        <div class="row" style="min-width: 80%;">
+          <div class="col-md-6 d-flex">
+              <div class="d-flex bg-light rounded-3 mb-5 p-4 flex-column justify-content-center align-items-center gap-3">
+                <div class="lead fs-5 text-center"><i class="fa fa-solid fa-phone me-2 text-danger"></i> Phone: <p class="mt-3">+91 8668084373 </p></div>
+              <div class="lead fs-5 text-center"><i class="fa fa-solid fa-envelope me-2 text-danger"></i>Email: <p class="mt-3">krishnankrrish850@gmail.com </p></div>
+              <div class="lead fs-5 text-center"><i class="fa fa-solid fa-location-dot me-2 text-danger"></i>Address: <p class="mt-3">No9/5, Sathri Street, Saidapet, Chennai-600015. </p></div>
+              </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <form class="bg-light p-5 rounded-3 mb-5" id="myForm">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <p id="emailErr" class="hide" style="color: red;"></p>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone">
+                <p id="phErr" class="hide" style="color: red;"></p>
+                <div class="form-text">Phone Number Must be 10 Numbers.</div>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check">
+                <label class="form-check-label" for="Check">Click to accept <a href=""> terms and conditions</a></label>
+                <p id="checkErr" class="hide" style="color: red;"></p>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary w-50">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
+        
       </div>
     </section>
   </main>
